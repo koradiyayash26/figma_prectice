@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<style>
+    .bg-img {
+        background: url(assets/img/main_bg.jpg);
+        margin-bottom: 147px;
+    }
+</style>
+
+<body>
+    <div class="bg-img">
+        <div class="nav-bar">
+            <div><svg width="205" height="30" viewBox="0 0 205 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M14.52 8.864H9.072V23H5.784V8.864H0.336V5.96H14.52V8.864ZM22.6161 13.208C21.6401 13.208 20.7681 13.4 20.0001 13.784C19.2321 14.152 18.6801 14.688 18.3441 15.392V23H15.1281V10.424H18.0801V13.112C18.5281 12.248 19.0961 11.568 19.7841 11.072C20.4721 10.576 21.2001 10.304 21.9681 10.256C22.1441 10.256 22.2801 10.256 22.3761 10.256C22.4721 10.256 22.5521 10.264 22.6161 10.28V13.208ZM24.2893 18.296V10.424H27.5053V17.6C27.5053 18.56 27.6813 19.288 28.0333 19.784C28.3853 20.264 28.9053 20.504 29.5933 20.504C30.0093 20.504 30.4173 20.424 30.8173 20.264C31.2333 20.088 31.6093 19.832 31.9453 19.496C32.2973 19.16 32.5933 18.736 32.8333 18.224V10.424H36.0493V19.4C36.0493 19.736 36.1053 19.976 36.2173 20.12C36.3453 20.264 36.5453 20.352 36.8173 20.384V23C36.4973 23.048 36.2253 23.08 36.0013 23.096C35.7933 23.128 35.6013 23.144 35.4253 23.144C34.8493 23.144 34.3773 23.016 34.0093 22.76C33.6573 22.488 33.4493 22.12 33.3853 21.656L33.3133 20.648C32.7533 21.496 32.0333 22.144 31.1533 22.592C30.2733 23.024 29.3053 23.24 28.2493 23.24C26.9533 23.24 25.9693 22.824 25.2973 21.992C24.6253 21.144 24.2893 19.912 24.2893 18.296ZM43.8773 23.24C42.8053 23.24 41.7813 23.064 40.8053 22.712C39.8293 22.36 38.9893 21.84 38.2853 21.152L39.4373 19.064C40.1893 19.672 40.9253 20.12 41.6453 20.408C42.3813 20.696 43.0853 20.84 43.7573 20.84C44.3813 20.84 44.8773 20.728 45.2453 20.504C45.6293 20.28 45.8213 19.944 45.8213 19.496C45.8213 19.192 45.7173 18.96 45.5093 18.8C45.3013 18.624 44.9973 18.472 44.5973 18.344C44.2133 18.216 43.7413 18.072 43.1813 17.912C42.2533 17.608 41.4773 17.312 40.8533 17.024C40.2293 16.736 39.7573 16.376 39.4373 15.944C39.1333 15.496 38.9813 14.928 38.9813 14.24C38.9813 13.408 39.1893 12.696 39.6053 12.104C40.0373 11.496 40.6293 11.024 41.3813 10.688C42.1493 10.352 43.0453 10.184 44.0693 10.184C44.9653 10.184 45.8133 10.328 46.6133 10.616C47.4133 10.888 48.1413 11.336 48.7973 11.96L47.5013 14C46.8613 13.504 46.2533 13.144 45.6773 12.92C45.1013 12.68 44.5173 12.56 43.9253 12.56C43.5893 12.56 43.2693 12.6 42.9653 12.68C42.6773 12.76 42.4373 12.896 42.2453 13.088C42.0693 13.264 41.9813 13.52 41.9813 13.856C41.9813 14.16 42.0613 14.4 42.2213 14.576C42.3973 14.736 42.6533 14.88 42.9893 15.008C43.3413 15.136 43.7653 15.28 44.2613 15.44C45.2693 15.728 46.1173 16.024 46.8053 16.328C47.5093 16.632 48.0373 17.008 48.3893 17.456C48.7413 17.888 48.9173 18.488 48.9173 19.256C48.9173 20.504 48.4613 21.48 47.5493 22.184C46.6373 22.888 45.4133 23.24 43.8773 23.24ZM56.9126 23.24C55.8886 23.24 54.9686 23.072 54.1526 22.736C53.3366 22.384 52.6406 21.904 52.0646 21.296C51.5046 20.688 51.0726 19.992 50.7686 19.208C50.4646 18.424 50.3126 17.6 50.3126 16.736C50.3126 15.856 50.4646 15.024 50.7686 14.24C51.0726 13.456 51.5046 12.76 52.0646 12.152C52.6406 11.544 53.3366 11.072 54.1526 10.736C54.9686 10.384 55.8886 10.208 56.9126 10.208C57.9366 10.208 58.8486 10.384 59.6486 10.736C60.4646 11.072 61.1606 11.544 61.7366 12.152C62.3126 12.76 62.7446 13.456 63.0326 14.24C63.3366 15.024 63.4886 15.856 63.4886 16.736C63.4886 17.6 63.3366 18.424 63.0326 19.208C62.7446 19.992 62.3126 20.688 61.7366 21.296C61.1766 21.904 60.4886 22.384 59.6726 22.736C58.8566 23.072 57.9366 23.24 56.9126 23.24ZM53.6246 16.736C53.6246 17.472 53.7686 18.128 54.0566 18.704C54.3446 19.264 54.7366 19.704 55.2326 20.024C55.7286 20.344 56.2886 20.504 56.9126 20.504C57.5206 20.504 58.0726 20.344 58.5686 20.024C59.0646 19.688 59.4566 19.24 59.7446 18.68C60.0486 18.104 60.2006 17.448 60.2006 16.712C60.2006 15.992 60.0486 15.344 59.7446 14.768C59.4566 14.192 59.0646 13.744 58.5686 13.424C58.0726 13.104 57.5206 12.944 56.9126 12.944C56.2886 12.944 55.7286 13.112 55.2326 13.448C54.7366 13.768 54.3446 14.216 54.0566 14.792C53.7686 15.352 53.6246 16 53.6246 16.736Z"
+                        fill="#C7AC7F" />
+                </svg>
+            </div>
+            <div class="nav-items"><a href="" class="nav-link active-link">Home</a><a href=""
+                    class="nav-link dactive-link">Assets</a><a href="" class="nav-link dactive-link">Pricing</a><a
+                    href="" class="nav-link dactive-link">About</a></div>
+            <div class="nav-logo">
+                <button class="nav-logo-btn">Subscribe
+                </button>
+            </div>
+        </div>
+        <div class="header-title">
+            <div class="header-title2">
+                <div class="subtitle">
+                    <p class="subtitle-text">Trade Smarter, Not Harder.
+                    </p>
+                </div>
+                <div class="subtitle2">
+                    <p class="subtitle-text2">Killer Quant Strategies with Real-time Trading Signals
+                    </p>
+                </div>
+            </div>
+            <div class="cta-btn">
+                <p class="cta-text">Subscribe for Free</p>
+            </div>
+        </div>
+    </div>
+    <div class="center-div-overall">
+        <h1 class="overroll">Overall Performance in the Last 12 Months</h1>
+        <div class="flex-3-card">
+
+            <div class="coin-tred">
+                <div class="coin-info">
+                    <!-- <div class="frame"> -->
+                    <p class="frame-text">Total Trading Signals </p>
+                    <!-- <div class="divider"></div> -->
+                    <!-- </div> -->
+                </div>
+                <div class="coin-value">
+                    <div class="coin-frame">
+                        <div class="">
+                            <p class="coin-frame-text">5531%</p>
+                        </div>
+                        <!-- <div> -->
+                        <img src="assets/img/chart-state 1.jpg" alt="">
+                        <!-- </div> -->
+                        <div class="arrow">
+                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.836 8.81385C20.7621 8.55918 20.5901 8.34427 20.3578 8.21639C20.1255 8.08851 19.852 8.05813 19.5973 8.13192L11.9134 10.3594C11.7853 10.3941 11.6653 10.4541 11.5606 10.5357C11.4558 10.6173 11.3684 10.7189 11.3033 10.8347C11.2383 10.9504 11.1969 11.078 11.1817 11.2099C11.1665 11.3418 11.1777 11.4754 11.2147 11.603C11.2516 11.7305 11.3136 11.8494 11.397 11.9527C11.4804 12.056 11.5836 12.1417 11.7005 12.2047C11.8173 12.2677 11.9456 12.3069 12.0778 12.3198C12.2099 12.3327 12.3433 12.3192 12.4702 12.28L17.8354 10.7247L11.4488 22.3259C11.3208 22.5582 11.2905 22.8318 11.3643 23.0865C11.4382 23.3413 11.6102 23.5562 11.8425 23.6841C12.0748 23.812 12.3485 23.8424 12.6032 23.7686C12.8579 23.6947 13.0729 23.5227 13.2008 23.2904L19.5875 11.6892L21.1428 17.0545C21.2202 17.305 21.3929 17.5151 21.6237 17.6396C21.8544 17.764 22.1249 17.7929 22.3767 17.7199C22.6286 17.6469 22.8416 17.4779 22.9701 17.2493C23.0985 17.0207 23.1321 16.7508 23.0634 16.4977L20.836 8.81385Z"
+                                    fill="#0FAE96" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="coin-tred">
+                <div class="coin-info">
+                    <!-- <div class="frame"> -->
+                    <p class="frame-text">Performance of Winning Trades </p>
+                    <!-- <div class="divider"></div> -->
+                    <!-- </div> -->
+                </div>
+                <div class="coin-value">
+                    <div class="coin-frame">
+                        <div class="">
+                            <p class="coin-frame-text">13,452%
+                            </p>
+                        </div>
+                        <!-- <div> -->
+                        <img src="assets/img/chart-state 1.jpg" alt="">
+                        <!-- </div> -->
+                        <div class="arrow">
+                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.836 8.81385C20.7621 8.55918 20.5901 8.34427 20.3578 8.21639C20.1255 8.08851 19.852 8.05813 19.5973 8.13192L11.9134 10.3594C11.7853 10.3941 11.6653 10.4541 11.5606 10.5357C11.4558 10.6173 11.3684 10.7189 11.3033 10.8347C11.2383 10.9504 11.1969 11.078 11.1817 11.2099C11.1665 11.3418 11.1777 11.4754 11.2147 11.603C11.2516 11.7305 11.3136 11.8494 11.397 11.9527C11.4804 12.056 11.5836 12.1417 11.7005 12.2047C11.8173 12.2677 11.9456 12.3069 12.0778 12.3198C12.2099 12.3327 12.3433 12.3192 12.4702 12.28L17.8354 10.7247L11.4488 22.3259C11.3208 22.5582 11.2905 22.8318 11.3643 23.0865C11.4382 23.3413 11.6102 23.5562 11.8425 23.6841C12.0748 23.812 12.3485 23.8424 12.6032 23.7686C12.8579 23.6947 13.0729 23.5227 13.2008 23.2904L19.5875 11.6892L21.1428 17.0545C21.2202 17.305 21.3929 17.5151 21.6237 17.6396C21.8544 17.764 22.1249 17.7929 22.3767 17.7199C22.6286 17.6469 22.8416 17.4779 22.9701 17.2493C23.0985 17.0207 23.1321 16.7508 23.0634 16.4977L20.836 8.81385Z"
+                                    fill="#0FAE96" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="coin-tred">
+                <div class="coin-info">
+                    <!-- <div class="frame"> -->
+                    <p class="frame-text">Performance of Losing Trades </p>
+                    <!-- <div class="divider"></div> -->
+                    <!-- </div> -->
+                </div>
+                <div class="coin-value">
+                    <div class="coin-frame">
+                        <div class="">
+                            <p class="coin-frame-text">4,214%
+                            </p>
+                        </div>
+                        <!-- <div> -->
+                        <img src="assets/img/chart-state 1.jpg" alt="">
+                        <!-- </div> -->
+                        <div class="arrow">
+                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.836 8.81385C20.7621 8.55918 20.5901 8.34427 20.3578 8.21639C20.1255 8.08851 19.852 8.05813 19.5973 8.13192L11.9134 10.3594C11.7853 10.3941 11.6653 10.4541 11.5606 10.5357C11.4558 10.6173 11.3684 10.7189 11.3033 10.8347C11.2383 10.9504 11.1969 11.078 11.1817 11.2099C11.1665 11.3418 11.1777 11.4754 11.2147 11.603C11.2516 11.7305 11.3136 11.8494 11.397 11.9527C11.4804 12.056 11.5836 12.1417 11.7005 12.2047C11.8173 12.2677 11.9456 12.3069 12.0778 12.3198C12.2099 12.3327 12.3433 12.3192 12.4702 12.28L17.8354 10.7247L11.4488 22.3259C11.3208 22.5582 11.2905 22.8318 11.3643 23.0865C11.4382 23.3413 11.6102 23.5562 11.8425 23.6841C12.0748 23.812 12.3485 23.8424 12.6032 23.7686C12.8579 23.6947 13.0729 23.5227 13.2008 23.2904L19.5875 11.6892L21.1428 17.0545C21.2202 17.305 21.3929 17.5151 21.6237 17.6396C21.8544 17.764 22.1249 17.7929 22.3767 17.7199C22.6286 17.6469 22.8416 17.4779 22.9701 17.2493C23.0985 17.0207 23.1321 16.7508 23.0634 16.4977L20.836 8.81385Z"
+                                    fill="#0FAE96" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="main-top-3-Performers">
+        <h1 class="text-top-3-Performers">Top 3 Performers</h1>
+        <div class="top-3-cards">
+
+            <div class="main-subcontainer-3-card">
+                <div class="subcontainer-3-card">
+                    <div class="flex-icon-heading">
+                        <div>
+                            <svg width="47" height="42" viewBox="0 0 47 42" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="47" height="42" fill="url(#pattern0)" />
+                                <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_1_453"
+                                            transform="matrix(0.00341075 0 0 0.00381679 -0.0116128 0)" />
+                                    </pattern>
+                                    <image id="image0_1_453" width="300" height="262"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEGCAYAAADfSqglAAAgAElEQVR4Ae1df4gd13VeB7d2k5rgxk2xurvaN/e+Xcs/5Grnzqy1IUEmhOAUQ0jAmBBCaE2DIcSmmIBLwCUY8ocpBkMgSfEfJhgc2ZJsYRMnMQlO6qDi4MYkDXVlR00qhPJm3r5drRXJttQp3317d59Wb3ffj5m5Z977BOK9nTc/7px7zrn3nnu+70xM8J93CbTi2q2rkX73TFzPmpHmf88yuHDbbJZG+kHvisEGUAJSJZCE6pFs/xydlWdnhQFjNa5ny5FaacwrLVVf2C5KwKsElm+ZvrYV6d+fW5il0xLgtDB4JKH6nlel4MMpAckSaIb6nv/bP5stCTDYcV+aLkc6O7dQz9J9wccl6wzbRgl4k0A2MXFFGgfHLuznLMu3w0wjnb2HWJZRr2YTE+/zphR8MCUgWQKtqP6xswv1bDlm8N2308Lzs/2zWRoG90rWGbaNEvAqgSTSTyKGglFegtGOcxv+uFDPliLVOL1XfdirUvDhlIBUCbQWa7vPRPXlt5nmIMJhZ4tzWBo+JlVf2C5KwLsEGpH6GtMcZMwwV+J6hjy5JNTz3hWDDaAEJErgVLjr/UtGHX+HaQ4iZlnYvU2NekmirrBNlIAICTSi2l3YqWoxluXdaSHVBBnw6BMRysFGUAISJYBR3Y7udFrendb522YzzHpP7937AYm6wjZRAt4lgLgJ4ieIo4zzbp2Ud7cZ8CZ4yLtisAGUgFQJNMLgmwzAywjAA2e4EuvV5XiuJlVf2C5KwKsEkAOEXCAklEqZaYxrO5Ab155lqae8KgUfTglIlkAaqq9wliVjluVwhsmCul2yzrBtlIA3CWQHDlzZDPUv372NOEPfs7tLcIYHDlzpTSn4YEpAsgSa8cwnkZfVIs7Q+9IYaQ7YvU2M+pJknWHbKAGvEkiMOoKlIXGG/peHwBm2In36TDh7nVel4MMpAakSSOJgdiXSZ0mn7N9h2QA8cYZSTYXtkiKBRqS/wQC8f4eFWJrDGYKXX4p+sB2UgCgJLIXBB5ci/TvSKft3WphltZEI6kVRSsLGUAKSJJBG6osXSafsPfiOWRYC8MB8Nk39s5J0hG2hBERJIDX6FdApMwDvf6b1jnVY+g2wbIhSEjaGEpAigWakFlfj+kXSKft3WJhpIa4IHjMp+sF2UALiJNAw6gmmOchwWGCIJc5QnImwQZIk0IzU1EqsW6RT9u+0bJoD6hlG+klJOsK2UAKiJICy6kxz8O+wsCwEzvDsQv0iqh+JUhI2hhKQIoETB2aubhr9hg38kujP684hZlmsZyjFMtgOsRJIo+AzAEaTTlnGTAszXuIMxZoLGyZBAmmkXiSdsgyH1cYZqlNn4hs+JEE32AZKQJwEAA9ZjfV54gz9Oy0bgF/ELEs/Kk5R2CBKQIoEUPCTAXj/DgsBeAwcGECWjLpZin6wHZSAKAmA6gSUJ1iSwGj4358MMMsizlCUebAxEiWQhsG9nGX5c1Sdg4TDGaah+rREXWGbKAHvEgCdcmrUaxaQy1mW91kmcYbeTYINkC6Bpql9AvQzpFOWMdPCjJc4Q+lWw/Z5lUDDqEMwFMRSOpcp/F6+PNZwhq3WYm23V6XgwykBqRJYmVcaYFwU/6STKt9JdcrcpjnYZNLgu1L1he2iBLxLIDXqYQbg/Tor57jWcIYZcYbezYINkCqB5CNz1yxF6sT5BdYzdI7D1ydmWRdum83SODiWTUy8T6rOsF2UgFcJJHHwOdIpy5hluXqGzVDf41Up+HBKQLIEmiZ4mXTKMpzWGs7w5PIt09dK1hm2jRLwJoHU1OLVWF9AWSpfSyI+d8NhIq5InKE3c+CDqyCB1OjHmeaw4TR8OlDiDKtgMWyjVwkk++Z2LUe6STpl/07L4QybRr3gVSn4cEpAsgSSUD3ANAf/DguzO5AtgnSROEPJFsO2eZXA8Tv0VU2jfg1D8bkk4rPbTpM4Q6/mwIdXQQLJvL7T0inHMmYa4+681uKKD1ZBd9hGSsCLBBA7IZ2yDIftcIYo2eZFGfhQSkC6BMCCSTplGQ6LOEPp1sL2iZAA8oAYgJfhtJZjnWGm1ZivfVSEcrARlIA0CSDTuhWpk+dIpyxiA6IDZ3iFNF1heygBERJA7TzMsoBxG/fgt+/3dzjDhgn+ToRysBGUgDQJgDUgNepV0inLcNiY7WLWS5yhNEthe8RIIFlQtwOQiziK71kGn68zzHiJMxRjHmyIRAkkRj21lg9Ep+V5eQyc4ZlIn2tG+iaJusI2UQLeJbAcz9VIpyxjhkmcoXdzYAOqIIHEBA8xzUGG03I4Q6ASqqA7bCMlULoETu/d+4Elo946T5yhiGUx4FNLRv3mxIGZq0tXBj6QEqiCBBKj7iadsoxZFjYgbFzRqK9WQXfYRkrAiwRSo34Cp4VYCnft/MqAOEMvJsCHVkkCyb7AvB3r90in7NdZYbBo4wxns4ZRT1RJh9hWSqBUCTSN+jbTHPw7LDgt5MedXahfbEZqsVQl4MMogapIIAn3XL8cq+QscYbel8WYZQFn2DDq59nEBHGGVTEitrNcCTRNcD/THGTMshzOMI3UF8vVAj6NEqiIBLIw/JPEqNdJpyzDaTmc4VIYfLAiKsRmUgLlSqBhgk+Bd7xFnKH3paFNc1icy5JQPVKuFvBplECFJJCY4CjplGXMshzOMJ2v76mQCrGplEB5EoBxAIwLY2Fell/H1U5zAJtDcLQ8DeCTKIGKSQDLEAbg/TorN1g4nCGW6xVTIzaXEihHAht0yqxn6ByHz0+7EWLUr1FnshwN4FMogYpJANS9iGX5NFQ+e2OWR5xhxQyIzS1XAkhaTOPgGOiUiTPccBy+nCiSeldi3Ur2ze0qVxP4NEqgIhJAGSoYCumU/TssF4BPjX68IurDZlIC5UsgifSTxBn6d1iY2WHgWI2JMyzfCvjEykigtVjbDTplUJ/4Wg7xuW2HaXGG+2ezJAr+rTIKxIZSAmVLoBGprzHNQcYsCzjDNn8ZcYZl2wGfVxEJnAp3vX/JqOOkU5bhtM4tzNp6hsQZVsSA2MzyJdCIandhx5BVo2U4Lcx4iTMs3w74xApJIDXqJeIMZTisdZxhOHNDhVSITaUEypMA6hmeierLpFP277QQgMfgkRh1pDwN4JOGkkAznvlkK1ZfSCP9ef4vXgZNU/9satSr4Grizp1/pwUaINABEWc4lBsp5+LU1GIkNWLHBJ3G/8XL4PwCY1jSHLXDGYKAsRzL41MGkgDKU2FKjCAw/5cnA2kGy/a06xkmoXpgIEPiRcVLAMs/EPVzx8r/soQOw38fWPhUpJsoJlK89fEJfUkg+cjcNUuROoFcFBqLf2NhH8jogzabA3GGfTmTMk5uzKuHiW2TYSR0VnL6ATu3wBkitluGHfIZPUggiYPZlUifXSWujbPLSI6zkOC413GGcf1nPZgSTylDAsg54eyKhirBQUhsA2K62IhCqk8Z9shnbCMB5FyxBBWdlURHIalNa6knvyPOcBtnUvRPLPJJRyXJKUhvC1YhjUh/o2i75P23kEAjqt+HTmAag1zHBSYHEMwhliLdoEe9fcAZItaLmO8WJsXDRUkAuSXLsUqQazLqilbV98MmCOKLy5FaIZ2yf4dNnGFR3qiH+zZD9R0G2v0bwVbOdB0acuDAlewrOf1EnGEPziXvU5BTgtwSsgPIMYROx+WKfCbz+k70fTNSU2BzIJ2yjP7CYJIY9Xp24MCVedsm79dFAsALXmBtPJFL4Y1lx6Vl1NNIP4gZcadj43d/Dsz2hQnu72JePJSnBIAXvEi8oFjDR9wKgd10E4HciQMzVzeNfgMpKHRU/hyVkz1xhnl6pS3u5fCCyClxguenf+Xv7INsceut8zQKPgM6ZcRROq/h9/LlgZmwnWWF6jtbmBsPDysB5JBwWVG+cvfqUJDCAAD6dsmJjUj/sF3dRe579Pq+VT9vZa2eIXGGw3qmLtc35pUmXlCukSMXDkv1JA4+16X71g+14tqtq5F+FzlBVTf4qrcfsyz0WdMEL693EL/kI4GGUYey/bNMQBSYgOkUH5shvfR2atRjmCnjuqobfdXb7wYaxIZ76Tue04MEgBfEcoOxD5kGjvSSt2P9XhLq+R66c+JMfMOHWpE+/Ucm/Ypw2OCQw1IeMeJe+o/nbCMB4gVlOqnOmQVmS40w+OY23XjZT2kY3Mt4pJy+xeoFnHKXdRQP9CcBhxfsNBB+l6PomCUtRapxJpy9rp+eRdJiatRr2DVkf/rvT5eOQpxhP1q86VyLFzTEC0o2aBtXDIN7N3VdT3+m+4KPozQYcYb+HZZLc2A9w55Ut/tJDoMm2WDHtW1QcMyOUI8wm5h4X/ce3PkoN1P8Oyunwxg4ECtGzHjnnuMZl0igjRfUF5Ar4gTKTzmyWI50huVgK6p/7JKO6/MPpqvI6VPYlwWth/qXxBn2qcjIDSFeUJYyuwFjY/kQfLfPbu16uisg4u7PT7/9bjdRovp9XTuLBy+XAJIPkQ1NYj6/iruV4wDrwkqsW63F2u7Le6//I6f37v0AttUJuZLR3xZnGKvkDzfX/qr/3hyzK4gXlKG0WzkrHMcInHdFYQtq5yAlIvzhZtBNo749Zu6n/9fl8kC2w3LEfGBf6L93t78iies/Q+Xu7ZwlfytHP9o4Q30h2ReY7XttjH9lALYcZRzU6EHMB3qYhgk+VYSakphRTv9jlmVB6j3CrYrQB/H3bG9xE2M2qEMp8jq3TEiNfrZIRUqNfhxLTjyvyPfhvXeWr8UZ7t8Z0F6kPoi9N/GCOyuQTyMrKxM62Te3CwF9BH59vi+f3dbHdj1DdQIbI2KdR9kNQ84HOKYJ05DrtOxWd0lYMwT0kUFPpyFDHywpY0l9X7bvGeh5TRPcD4OggspQ0M39YEdZE/y2rFEWgPclo35jA/xcGnq3Cze7XplXeiADH6WLkOvB+oIyHRUcF+IY2LlLjLq7TL1DxR04LFIK+dcNF79EjLlMHRD5LOR6cHblXyk3z6rwd8dO0Us+lKdp1Av/R9JG7zMs6AIGDpvYa2qf8KELIp6JHI/VmHjBbs5CwjEQ84HOuFdivryVasmom89E+hzplP0PaBi8bIx5nHGGoNRlQQL/ytjNObplAOiM83ZE/dwvMfpRzsDl6Aj6IjXqy/304UicS7ygHCXs5rD+uDCbgcYYdMY+FW75lulrW5E6hfZ0ayePlatHSDcBYSO46nzqRanPRhkogl3LVbR+DRuxo8SoL5WqGFs8DO1Ae/p9B56fv465mXdigm9t0V2jdzg16mFO8/NXprwMFLuCaRwcG4aYL0+tRTtAFMg8PRk6Y3GGHmObeerWjvcCZzTrC8pQvG4ODqyTmPY35msf3bEzSzwhWVC3gzCQdMr+dadj97insm4lqkn+jyJe0L/CdXNUOOam+w2jnsi/54e/YxKq77E2pQz9sfl57bBBqfl5w2tRH3domtonbH1BZi+LjMeAmG850s3mgp7so1tLO3U5nqutxHoVmddbOV0eL8+htREQ6q2RrGcIuEUz1L8k3KI8herXeBFXzJuYL29vlpjgIcY/5egQcIZJpL6edz97v18aqq9Q0eQo2mZn5oj5jt+hr/KuLNs0wNIpm+C3NuuaM3XvM02LM4z1Kma/23RbtX5ifUG5jgqOy8IuCiTmy1tbgWvETiY5//3rlYt7Ir6Ydz97u5+tL7hINobNsxoJf7cVzuZcHfGmIAM8mCgJ/87K6a/DGaIw7gBdKesS4AXfjvV7rC8oR8GcouHTTelBTy1Lc7ZvzQadsky5dsp41L9j0Fsrqvta5esZ2vqCLCzgPdawldHYQHtFg6aO6QMGs9X78Xg5ssHyHLpUaZwh8YLlKMugRokUkyWj3iqLmG/7OVP/v1ouNaMS0inL0DMk9gJneHqv+nD/ven5CtYXlKFEWzkzR8zXiGp3eVaVoR5Ptlo5euYC8I0w+OZQnerjYtYXlKNIm50WFMsS4xnlhZgvT320+X1G/Zr5fTL0rZI4Q9YXlKE8mx2V+xuEeKuxPt+Ka7fm6Tx83Qt1ElEvkXTK/vWukoOhwws6A+Gnf0VyfWCn7chONvpRXw6miOcmJjhKOmUZelapcIOtL9gmf+POjcDdKwRGQYjnm5gvb6eVztf3gE6ZOEMZTqvsSksD6RPiCagviHgCRnI3qvNThizc1nMz1PcM1MHCL0pC9QjhXzJ0DTZvcYYmeEis2jSi+n1UGDkK0zlQYADpIOa7QqwSDdEwMNm2InXyHOmURUwWXFKySJwh6wvKdFTOaYH4bjWuX2xGanEInyD+0oYJ/g6xLMwm3bvz048sbLy0zQAiD2cIjmdMAakcfpRjO7k7xUmNfly8xxmygZZOOQ6OYTa5nUz4Wzl6uhzp7NxCPQNj7JBdm9/ltr5gpN9FHTsqQjmK0I+ckQkOYr5k39yu/Hpd7p1A72zfOZbXF/302yici8FSHM6QyHnZhmHxgqF6QK6Lyb9liQm+a7FtXBp6n0S4zR4RVZiIF5TrrNzohp1b7ODm7xbk3rG1WNu9HKkV0D6Pwkyl6u/QTqfRp73iDIkXlOusoOCtSGfIAEdunFzXUlzLGpH6GopWVN3YR6X9mPF6xRna+oIMtIs0CBdoB+qgOJcg+86nwl3vXzLq+DtMcxCho4hxr0b6XS+QsJV5pVlfUO4My+XAVI2YL28XCDYKBH0x2xyVmUpV3wODqDfQvcMLohFVFeAot9sG2iVnGeftmba5X2rUSxf3E30hQd8RgLcVvE39s9t0Wb4/ob4gcis4asl01sBxpUa9WVVivny1dWIiCfU8liKk6Zahr4irYqlein5ityk16jXyD8no/M2jJgaR0kewvD1MAfdDsJdpDnJ0Fknm2BQpoKsvvWW7viB3XjY7Cgl/uxhBI9I/vLTX+Be200Hfi+11CX017m1AugmqeBeKMyReUM4I1U3hR42YL283y8FWjv66XezEqKfy7uf1+zm8IAPtcjq+03G16TxGi5hvXfly+IISVM1Q/9IumblZ5H2mWSjOcKO+IKfUnU5Cyvf2Jog6uXzL9LU52PbI3mKdYJI4Q+8OCxMfDB6pUa/mXs/Q4gVJzOe9k7s5SGwVY9se1Coj62lyfLHEqCMMwMtYJUB3kZuVK86QeEEZndvNWWGUssR8Rr+So02P9K2SOJhl0rMcnXY4wzPh7HVDKx5yJZYidQJFN7sZDI/57XhbVmkMiPmGVuRNN2hE+huYZVF//eqvk7+d8Rr12KZu6v/PJFJfJzGfjE51nes+3U7LOBDz9a+521/RplPWvyedsgzdtjjDYUvPWbxgrFdZiURGpzpH5T7XifnCPddvb578tZsEWrH6wkVkXXPH0PtME4MvYllD5RASLyjTUTmHhWk0Cn90M0Ye600CqdGvkE5Zhp47lEYaBZ/prfc6zmrjBWdBrevd+zoD5edGXwAaZYn5Dhy4sqPb+LVPCaAoxxqzBfVcgK1b/jaj3wA1UM9dyfqCG45BopNEBRzkXWFQ6blTeeKWEmgY9QTTHOTofHvl0AfOsA1h4A6KRGflAu1JqOSVTtrSJcj+oRmpqZVYt0inLMNpoR9Abw2a6x01Jwn3XL8cqwQBXYkGO+5tKgU0uqOWjN4JaaQfJJ2yDIcFG8csC4VEdtS0plHfRhoDRvJxdw4S37+NFxRc/ntHDZN5wvE79FVNo98gnbIMu0fsHJOmVlT/2JYaA6Kzt2P9HusLyui0zQ7TBSRLIT7bUktG9wfsTmEzo0WcoffJCiZMbQSHehXFcbtqHesLynRUcFxuy7dZJrVsVy0Z7YNppF60vONcYXh3WtviDBOj7r6wn0l0m2c1Ev52SXUwptF2F/7fDhVdSKcsZ+Bu4wzVqTPxDR9a1w6kMSyZ4LfEC8rpqE5H6Yj5loy6eb3T+KUwCaRGPcY4rhxbaMdtO3jeEhM8hGlwp5Hwu6AOszsmHR1WmKnyxpAARvNWpE79kfUMRfiEywbsplEvsAySHAfVOVgAnNuK1EmAdelOypNAGgb3Ms1Bhk1cFhJJ5+t7VmN9gWWQZHSQc1iOmC+N1BfLM1U+CRLAzhSqQ5FOWYZNuE2nZF7faTXU8rXvZ/6Vcxa+Pze2dfUr2cTEFXQj5Usg3Rd8HEFfQKF868O4Px/2YGNZoXrAagIq4qAMEjPcZSjnGj/QhdTU4vJNlU90EgAEijhD/zaB0MhSpH93SQ5iatSX0Tnj7s19v78dTdAPofqOMxx++pFAY15p1M8jJ5w/p+XysS4LjXSWQYLR+DbccX0+ZrnLkT6dC8e1HzsfqadiF50DuT9/YDPe4+BY19AIKEvOY2eK63YvDhujCTooCdUD6KCDk5N/xv9+ZfCT2dnrUqPeJJ1y+U4L8cN28ui2mEKu233N7rBT+79/o7NDU8Fx/D88FbzJ/95l8Ktnp3TzP29S2ZmF8o3Wly76fq4LjexYHZpc7n6UErMrOKwfa5UdmVbZC7s1/wuRwTNT7T45Na+5a1hSuKgvKiVbLYcB+NKWhRhN0EFv7dXZ01MqOzStssP8L0oGT02q7Kd1RYdVksNa48R6qKeAqK1HCHwh4QmlOK02y6I+/XK9ft/TU+rCs3RWopyVGzwOTqrsv27RXBoW7LTgd1AP9ZI0hp08Fys+l7c0tLk+8/qf0CeHptW/vjQzy1mWQKeN2e/zMypLjObGVEFOawPhoT+/k4+67HdyZBXvtBwxn6sUgl2pZ6eDk4hhuZGdn3KWyFgaHptjAL6ooLzdJY/rP7vMGfVyINkXGLKQFue0MJqA5XJzLbanp2bu/sFM3Qbf6azkOCv0BeKLCMIj3kj8bb62AXkiPNKYr320F//U9RziDPPtFDcyIdBuaX2MeqGb4J+eVM//aKbOpaHApSFiWT8IlI1vYtBxfcrP4WSxFmjfufhEN4Nxx07vVR8GzhAJXOyQ4TqkU37g+TkT6XPNSN/kZN35eXBS6eem1erzXBqKXBpjafgfN3Jp2KnTw3xvbzz1WN6r01C6fSfOMD9H5TrVjiaheqSbvN2xZ6b0P2KWxWWhrGUh+sPlZiHRl0vD4e2jrzQGZyBbfRJnOHyHOEeFT1RubkX69zsR80Huh6fULxDPotOS57SwNESiL6BsXBoObiMor7Zk1HG38bSVH+rrOHCGlgGTOMOhlsZQbMSuWrH6Qi8d8MxkfeHotHrv6G55BjvuThQBeCwNCdsZ3FnBHlAApxHV7urFHvo6p2HUIVDHks1h8A7Ctm3TBC/3I/inp4NHkZs17g5C4vtjaYjBhLCd/m0CfgT07P3aQ8+2Y/mBIn2W/ED9dw6Wgoh1gI66X2K+566bu+bQVPBb5mbJnGVilvXKrGIsq88d00HtoWeHhRMtznCRRH+dMalevmM0WSs1/62+BL528qG/Dv72+zM6I2xHntPC0hBZ8P+9l7CdXmwB51h72D+XNYx6YhB76Pka4gwHm12BmA/pIaCj7lnYm048NBU8yaWhPIeFpSocFgYUwnZ6sw+XxtCM1NQmNc//T1sp+jZWiu51NMF5Fi9o1JeH6Y3npuZ2gZuJuVkynRaWhr/Yw9ysXuzC2sMafnYYm+j5WuIMextJ0HkoF4WyUUhT6FnAW5x4aFr9A3OzZDosLA3x/3+Ym7XtTnohaQxb2Mv6YeIMe3NYjuY1WVC3rwtviC+gTj40HfwYuVkwDok7Z+PcJuRm/ShQNi+LuVmX2whkYus9mvpnhzCDwS5tGvVtBJKZ5nB5x2Bm5QKLSaSfHEzC3a96ZlrfdHRanWdulkyHjaXh66RUvmyWBXtADmJq1EvdNbvgowggL8cqIc6wu8NygcXWYm133l3x9HTwzy/VmJslcTaH3Czs5jI361K7QL1NsL8koZ7P2x56vl8jqt+HAFovgbZxO6fIwOLBG2/808NTwa+wMyXRaMe9TZhlgVKZOMO203KrDe/1NrMw/BMElO26tM/EsVF2YJuJ+XoeAfo48cjkzAHsGDI3S+bSkJTKGzOstXqbzSTcc30fKl7MqaxnuNExcMIAw4KYL5nXdxYj8Y27klJZprPCDNNRKv8hJKXyWlrPVzc01/O3Ns6QAfj1qe8WxHx5dxMpleU6LDgtLA1BqTzOS0O32jhxYObqvPV/4PtZnGGsV8cdZ+iI+dL5+p6BhdnnhaRUluu0kHriKJXHsRBry+UhhurTfap18aeznmE7o70R6W8UL+1Ln3CIlMpiNx/GlVJ5PY0hUi9eqq1C/rI4w0idGNd6huALW4r073Yi5iuiu56a0oqUynJnWlgajhulMtIYViP9biuu3VqEzudyT9QzBCHXuGX54n3B7ZNGA9RTy0XyExOgVCY4WqbTwtLwyLTKQKkM9MMo75Dj3VwstxEG38xJvYu7zbjhDNE51lkZ9ZPipLrznbOJifcdngr+nZTKMp3WOFEq2zQGo5Jh2El21viczgBB3TjVM1zP4N0XmJxEOPBtDk7WYlIqy3RY2DWE0xoHSmWbTG6C+wdW5LIvHJd6hnbquziX4X3LlvFWzyOlslyH5SiVRzk3CzmITaN+ffwOfdVWOiru+LjgDIGjbEX6NOo3SukEUCofnlJvErYj03EhAD+qlMpIYygraTp3e0tD9RVMDUc1AI/3shm8YXBv7sIb8oakVJbprBzGchQplV0aQ7OkpOkhTeTyy109QztFHDGcITpnjZjvVQS7L397/0dIqSzXaY0ipTKSpldjfX7JqJv9a/+ALVivZzhiDqtNzDebtaL6xwYUTeGXkVJZrsNysJ1RolTGaiMx+tHCFbvoB4waztAG2tE5ORPzFdEPoFRGmgNygNxyhJ8yZOEYY0eBUlliLHdgexq1eoYg5luJdasIYr6BhbzNhaRUluGgug0USHOoOqUyYrlrTKJDFVnZRoXL/6kxrx4GnfIoZPjaQHukHyxfioM9kZTKch2WWxpWmVLZ7goa9d0uHVwAAAfaSURBVDq48QbTUIFXJR+Zu2ZpBHCG6Jwlo35zKtz1foFi3rJJpFSW67SqTKmMNAbQxzRM8Kktla+qP1QdZ1jlHBNHqUzYjkzH5SiVq4QzdGkMiQmOVtUn7djuquIM1wPtFe4cUCq/QEplsZsPiGf91y3VKXfvuN+akb5pR8Ov6gmoZ7ga6wvA31UpnoXOWYn02TScuaGqske7HaVytwAwj/mdfVWNUnlk0hh2MmiHM6ySw0Ln+CDm20mW/f5+cHLyL56dDk5ipkUH5ddBdZN/VSiV22kM6uTyLdPX9quDlTu/ajhDEBJiw8AHMV8RnUtKZXmOyjmvKlAqO0haYtSXitBPkfesSj1DdM4FVMCJg8+JFOSAjTo0FRz9Ecvdi5xlYmn4g0DZkAn0T9pKZA2S9hqgdwOqX/UuQ85GYtTrknGGCLRfvM2W1vZKzFdE75JSWe4sC7MtLA0lwnawiwkqcEDuitBL0ffES7+zADyevFEEo5rjpPZaWrvAHgSlMmZZbjnCTzlOzMF2JFEqt3fKZ7PEqCMFqqXsW0vGGdpAexU4qQfsYlIqy3FQ3QYLzLJ+rJUtzCthaejSGKq+Uz6gubQvk4ozxC7IUqQaZ8LZ64Z6QeEXr1Eqnz+6W7bxdjPocTgmiVLZpjGE6hHhKl1882w9Q2E4Q4A5x2UX5Jm/Dv6F1XZkOmxHqXxq3m+5e8StWpH+/ajslA/l1dZxhuCCFhDPwq5gapRYYr6hhN3l4oN/eeOfH5kKSKkslIIHS0PflMoYwJuhvqeL+oznIaQNoFSW77V6m5gPPO1yifmK0BBQKhO2I3OWhaWvo1ReKbmmIQLtNo0hDo5JZdYtwh56umfTBC/bNAJPs6wOvOB3e2rwiJ1kKZVrs9w1FDjT8kWp3LJpDPUsWVC3j5i6D/86vusZVo2Yb3iJX3oHR6lM2I7MmVbZuVnrA3iovneppvCvdQk4nCGEVXY8C7sgqVFfXW/MGH45NKnvIaWyTIeF3Cz8L4tSebXNrLu6Mq/0GJpCb6+chHuuXzYqQanrMh2WzbivWvHH3kTa91mkVJbpsBDLKpNSeVQA/30bQL8XtHGG5e0YYp0O1sRkXt/Zb1tH8XxSKst1WHBaWBoWTanMNIY+LNvVM7S7EwUvDd06PTX62T6aOPKnklJZrtMqmlIZO/XYsW/F6gsjr+h5vSBwhqB1KRpnaNfpkT6bxMFsXm0fhfuQUlmuw3JLw5/WVZY3pTIG8Av7wdGufj4KelzqOzicYZGxrLVA+8OlvlhFHgZK5edJqSw2zaMISmU4QMSPG/O1j1ZETeU0E7OelVivYhZUhNNyxHyn9+79gJy3ltWSQ1PBtwjbkTnbwtLw+RmV/SHMD7Zj8YIVKBAsy0o6WpMa9TCEmLfDwjrdTn2j2l0dj+PXTRJ4cfImUioLTCTFstAF4I/NKRT2HdpGXBrDcjxX26QG/LNXCQBsaesZ5ogzxDodQcXUqJd6bcc4n0dKZZkzLDisPCmV27Mr9fVx1vVc3j3veoaOmK8V127NpYFjcBNSKst1Wo5SGQPxoFhchkdyNmJbzxAsCjmkOawF2h/LuYkjfbsnp+vBc9NqFUF4txzhpxwnNgxsB04ObAxppD8/0kpc5svZeoaRfnfYeoZr5YlOnYlv+FCZ7R+FZ4FSmQF4OU6qc8DA0vDItMpAqdxPPMuFR0A8MAo6KuodHM5w0AA8RpKMvD4D92k2MXHF4ang31nuXqbTwiyrX0plOLfVuH4RxAMDKwYv7C6BYXCGGEmwK5iS16e7cHs8enBahUen1XukVJbptPqlVEZ4pGHUEz12P0/rVwJNE9w/SJrDWkLcxWakFvt9Js+/VAKWUpm8WSJjeZ2UyjtlwYNOaTlSK63F2u5Le5h/5SYBQEZcPcNeA/A4D0tBjiT5dMNz181dc2gqOP79GQbgO+NIUr5jadgLpbKdXUXqa/loBe+ypQSa8cwnz9/WO87QEfM1F/TkljflD31JAJTKcFjPCk6qlOJAfLTDUSqjNFe3mC/SGFKj3iTKoy+1H/zkfnCGmF0loXpg8Kfxym4SIKWyzDgWHOR2lMrYfEKhlcSou7v1K48VIIFecYYk5itA+Gu3JKWyXIcFp9UtN4tpDMXZw4533glnCGoaEPM1TPCpHW/GEwaSwMHdtb8npbJMx9WNUhl5jG/H+j2mMQyk7sNdtF7PcOFydlKMJGvFUI8M9xRevZMEHKWyj1gNn7m9s9xMqdxGeejHd+pT/l6QBAAn6FbP0BHzkUC/IMF33Pbw7voewHaYm7W98/DlXLE0/I8bVYbwyHKkm8m+uV0d3cevZUsAsAJbrbkDZ4iRJImIPC+rLyyl8gxrGvpySts911EqYxAf96pQZdnDts+xOMNYX3CJckh5WDLqLSwZt72QP+YmgeN36KsOTwW/ImxH5iwL6Sc/Uur0iQMzV+fW6bzR4BJohuo7mFUh0I7ZVoPEfIMLc8ArSaks01lh9gWHdXRanQe32YDdy8vylMAfbq79FeoZZotzWSPSP8zz3rxX7xIgpbJcp4WK3s9OByfBItt7j/LMwiSA9fk7mGWRmK8wGe9044OTk5ZSGTQ04M6CkfC/DBmgP35Wm8uQ8AvmjZ36kr8XLAHADLgULFjIPdwesJ0Xdutjh6fVz/lfoAym1C9QLLeHrhR3yv8DYdH4yGB3rPoAAAAASUVORK5CYII=" />
+                                </defs>
+                            </svg>
+                        </div>
+                        <div>
+                            <h1 class="heading-akash">akash</h1>
+                        </div>
+                    </div>
+                    <div class="flex-akash-detail">
+                        <div class="akash-network">Akash Network <code class="akt"> AKT </code></div>
+                        <div class="div-196">
+                            <img src="assets/img/eva_arrow-up-fill (1).png" alt="">
+                            <div class="pr-of-network">196.9%</div>
+                        </div>
+                    </div>
+                    <div class="flex-akash-detail">
+                        <div class="long-network">Long Strategy (last 12 months)</div>
+                        <div class="div-196">
+                            <img src="assets/img/eva_arrow-up-fill (1).png" alt="">
+                            <div class="pr-of-network">168.3%</div>
+                        </div>
+                    </div>
+                    <div class="flex-akash-detail">
+                        <div class="short-network">Short Strategy (last 12 months)</div>
+                        <div class="div-196">
+                            <img src="assets/img/eva_arrow-up-fill (1).png" alt="">
+                            <div class="pr-of-network">168.3%</div>
+                        </div>
+                    </div>
+                    <div class="subscribe-singal-main-div">
+                        <div class="view-details-flex">
+                            <div class="view-details">View Details</div>
+                            <div>
+                                <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.92422 1.30908L12.3088 5.30908M12.3088 5.30908L8.92422 9.30908M12.3088 5.30908L1.80884 5.30908"
+                                        stroke="#C7AC7F" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="subscribe-btn">Subscribe to Signals </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-subcontainer-3-card">
+                <div class="subcontainer-3-card">
+                    <div class="flex-icon-heading">
+                        <div>
+                            <img src="assets/img/stack.png" alt="stack/img">
+                        </div>
+                        <div>
+                            <h1 class="heading-akash">Stacks</h1>
+                        </div>
+                    </div>
+                    <div class="flex-akash-detail">
+                        <div class="akash-network">Stacks <code class="akt"> STC </code></div>
+                        <div class="div-196">
+                            <img src="assets/img/eva_arrow-up-fill (1).png" alt="">
+                            <div class="pr-of-network">196.9%</div>
+                        </div>
+                    </div>
+                    <div class="flex-akash-detail">
+                        <div class="long-network">Long Strategy (last 12 months)</div>
+                        <div class="div-196">
+                            <img src="assets/img/eva_arrow-up-fill (1).png" alt="">
+                            <div class="pr-of-network">168.3%</div>
+                        </div>
+                    </div>
+                    <div class="flex-akash-detail">
+                        <div class="short-network">Short Strategy (last 12 months)</div>
+                        <div class="div-196">
+                            <img src="assets/img/eva_arrow-up-fill (1).png" alt="">
+                            <div class="pr-of-network">168.3%</div>
+                        </div>
+                    </div>
+                    <div class="subscribe-singal-main-div">
+                        <div class="view-details-flex">
+                            <div class="view-details">View Details</div>
+                            <div>
+                                <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.92422 1.30908L12.3088 5.30908M12.3088 5.30908L8.92422 9.30908M12.3088 5.30908L1.80884 5.30908"
+                                        stroke="#C7AC7F" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="subscribe-btn">Subscribe to Signals </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-subcontainer-3-card">
+                <div class="subcontainer-3-card">
+                    <div class="flex-icon-heading">
+                        <div>
+                            <img src="assets/img/injective.png" alt="injective/img">
+                        </div>
+                        <!-- <div>
+                            <h1 class="heading-akash">INJECTIVE</h1>
+                        </div> -->
+                    </div>
+                    <div class="flex-akash-detail">
+                        <div class="akash-network">Injectivek <code class="akt"> INJ </code></div>
+                        <div class="div-196">
+                            <img src="assets/img/eva_arrow-up-fill (1).png" alt="">
+                            <div class="pr-of-network">196.9%</div>
+                        </div>
+                    </div>
+                    <div class="flex-akash-detail">
+                        <div class="long-network">Long Strategy (last 12 months)</div>
+                        <div class="div-196">
+                            <img src="assets/img/eva_arrow-up-fill (1).png" alt="">
+                            <div class="pr-of-network">168.3%</div>
+                        </div>
+                    </div>
+                    <div class="flex-akash-detail">
+                        <div class="short-network">Short Strategy (last 12 months)</div>
+                        <div class="div-196">
+                            <img src="assets/img/eva_arrow-up-fill (1).png" alt="">
+                            <div class="pr-of-network">168.3%</div>
+                        </div>
+                    </div>
+                    <div class="subscribe-singal-main-div">
+                        <div class="view-details-flex">
+                            <div class="view-details">View Details</div>
+                            <div>
+                                <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.92422 1.30908L12.3088 5.30908M12.3088 5.30908L8.92422 9.30908M12.3088 5.30908L1.80884 5.30908"
+                                        stroke="#C7AC7F" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="subscribe-btn">Subscribe to Signals </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="rank-conta">
+        <h1 class="rnak-heading">Ranked by Performance</h1>
+        <div class="dis-grid">
+            <div>
+                <div class="card-grid">
+                    <table class="table">
+                        <tr>
+                            <th>NO</th>
+                            <th>NAME</th>
+                            <th></th>
+                            <th>STATSITICS</th>
+                        </tr>
+                        <tr>
+                            <td class="no-of-chart">1</td>
+                            <td><img src="assets/img/Mask Group.png" alt=""></td>
+                            <td class="akash-text-rnk">Akash Network <code class="akt-text-rnk">AKT</code></td>
+                            <td class="grreen-no rel-img">1.41%</td>
+                            <td><img class="abs-img" src="assets/img/chart-state 1.jpg" alt=""></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="card-grid">
+                    <table class="table">
+                        <tr>
+                            <th>NO</th>
+                            <th>NAME</th>
+                            <th></th>
+                            <th>STATSITICS</th>
+                        </tr>
+                        <tr>
+                            <td class="no-of-chart">3</td>
+                            <td><img src="assets/img/Mask Group.png" alt=""></td>
+                            <td class="akash-text-rnk">Akash Network <code class="akt-text-rnk">AKT</code></td>
+                            <td class="grreen-no rel-img">1.41%</td>
+                            <td><img class="abs-img" src="assets/img/chart-state 1.jpg" alt=""></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="card-grid">
+                    <table class="table">
+                        <tr>
+                            <th>NO</th>
+                            <th>NAME</th>
+                            <th></th>
+                            <th>STATSITICS</th>
+                        </tr>
+                        <tr>
+                            <td class="no-of-chart">5</td>
+                            <td><img src="assets/img/Mask Group.png" alt=""></td>
+                            <td class="akash-text-rnk">Akash Network <code class="akt-text-rnk">AKT</code></td>
+                            <td class="grreen-no rel-img">1.41%</td>
+                            <td><img class="abs-img" src="assets/img/chart-state 1.jpg" alt=""></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="card-grid">
+                    <table class="table">
+                        <tr>
+                            <th>NO</th>
+                            <th>NAME</th>
+                            <th></th>
+                            <th>STATSITICS</th>
+                        </tr>
+                        <tr>
+                            <td class="no-of-chart">7</td>
+                            <td><img src="assets/img/Mask Group.png" alt=""></td>
+                            <td class="akash-text-rnk">Akash Network <code class="akt-text-rnk">AKT</code></td>
+                            <td class="grreen-no rel-img">1.41%</td>
+                            <td><img class="abs-img" src="assets/img/chart-state 1.jpg" alt=""></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="card-grid">
+                    <table class="table">
+                        <tr>
+                            <th>NO</th>
+                            <th>NAME</th>
+                            <th></th>
+                            <th>STATSITICS</th>
+                        </tr>
+                        <tr>
+                            <td class="no-of-chart">9</td>
+                            <td><img src="assets/img/Mask Group.png" alt=""></td>
+                            <td class="akash-text-rnk">Akash Network <code class="akt-text-rnk">AKT</code></td>
+                            <td class="grreen-no rel-img">1.41%</td>
+                            <td><img class="abs-img" src="assets/img/chart-state 1.jpg" alt=""></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <div class="card-grid">
+                    <table class="table">
+                        <tr>
+                            <th class="pa">NO</th>
+                            <th class="pa">NAME</th>
+                            <th class="pa "></th>
+                            <th class="pa">STATSITICS</th>
+                        </tr>
+                        <tr>
+                            <td class="no-of-chart pa">2</td>
+                            <td class="pa"><img src="assets/img/Mask Group.png" alt=""></td>
+                            <td class="akash-text-rnk pa ">Stacks <code class="akt-text-rnk ext">STC</code></td>
+                            <td class="grreen-no rel-img pa">-0.53%</td>
+                            <td class="pa"><img class="abs-img" width="101px" src="assets/img/chart-state 4.png" alt="">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="card-grid">
+                    <table class="table">
+                        <tr>
+                            <th class="pa">NO</th>
+                            <th class="pa">NAME</th>
+                            <th class="pa "></th>
+                            <th class="pa">STATSITICS</th>
+                        </tr>
+                        <tr>
+                            <td class="no-of-chart pa">4</td>
+                            <td class="pa"><img src="assets/img/Mask Group.png" alt=""></td>
+                            <td class="akash-text-rnk pa ">Stacks <code class="akt-text-rnk ext">STC</code></td>
+                            <td class="grreen-no rel-img pa">-0.53%</td>
+                            <td class="pa"><img class="abs-img" width="101px" src="assets/img/chart-state 4.png" alt="">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="card-grid">
+                    <table class="table">
+                        <tr>
+                            <th class="pa">NO</th>
+                            <th class="pa">NAME</th>
+                            <th class="pa "></th>
+                            <th class="pa">STATSITICS</th>
+                        </tr>
+                        <tr>
+                            <td class="no-of-chart pa">6</td>
+                            <td class="pa"><img src="assets/img/Mask Group.png" alt=""></td>
+                            <td class="akash-text-rnk pa ">Stacks <code class="akt-text-rnk ext">STC</code></td>
+                            <td class="grreen-no rel-img pa">-0.53%</td>
+                            <td class="pa"><img class="abs-img" width="101px" src="assets/img/chart-state 4.png" alt="">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="card-grid">
+                    <table class="table">
+                        <tr>
+                            <th class="pa">NO</th>
+                            <th class="pa">NAME</th>
+                            <th class="pa "></th>
+                            <th class="pa">STATSITICS</th>
+                        </tr>
+                        <tr>
+                            <td class="no-of-chart pa">8</td>
+                            <td class="pa"><img src="assets/img/Mask Group.png" alt=""></td>
+                            <td class="akash-text-rnk pa ">Stacks <code class="akt-text-rnk ext">STC</code></td>
+                            <td class="grreen-no rel-img pa">-0.53%</td>
+                            <td class="pa"><img class="abs-img" width="101px" src="assets/img/chart-state 4.png" alt="">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="card-grid">
+                    <table class="table">
+                        <tr>
+                            <th class="pa">NO</th>
+                            <th class="pa">NAME</th>
+                            <th class="pa "></th>
+                            <th class="pa">STATSITICS</th>
+                        </tr>
+                        <tr>
+                            <td class="no-of-chart pa">10</td>
+                            <td class="pa"><img src="assets/img/Mask Group.png" alt=""></td>
+                            <td class="akash-text-rnk pa ">Stacks <code class="akt-text-rnk ext">STC</code></td>
+                            <td class="grreen-no rel-img pa">-0.53%</td>
+                            <td class="pa"><img class="abs-img" width="101px" src="assets/img/chart-state 4.png" alt="">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="center-btn">
+            <button class="subscribe-btn4">View All</button>
+        </div>
+    </div>
+    <div class="main-amplify">
+        <h1 class="Amplify-text">Amplify Your Crypto Trading </h1>
+        <div class="center-btn">
+            <button class="subscribe-btn2">Subscribe Now </button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="flex-footer">
+            <div>
+                <p class="truso">Truso</p>
+                <div class="flex-icons-footer">
+                    <div><img src="assets/img/Vector.png" alt=""></div>
+                    <div><img src="assets/img/Group.png" alt=""></div>
+                    <div><img src="assets/img/twitter-ic.png" alt=""></div>
+                    <div><img src="assets/img/youtube-ic.png" alt=""></div>
+                </div>
+                <div class="copy">2024 CoinMarketCap. All rights reserved</div>
+            </div>
+            <div class="flex-link">
+                <div>
+                    <h3 class="about-title">About Us</h3>
+                    <a class="footer-link" href="">About</a>
+                    <a class="footer-link" href="">Careers</a>
+                    <a class="footer-link" href="">Blog</a>
+                    <a class="footer-link" href="">Legal & privacy</a>
+                </div>
+                <div>
+                    <h3 class="about-title">Services</h3>
+                    <a class="footer-link" href="">Aplications</a>
+                    <a class="footer-link" href="">Buy Crypto</a>
+                    <a class="footer-link" href="">Affilliate</a>
+                    <a class="footer-link" href="">Institutional Services</a>
+                </div>
+                <div>
+                    <h3 class="about-title">Learn</h3>
+                    <a class="footer-link" href="">What is Cryptocurency?</a>
+                    <a class="footer-link" href="">Crypto Basic</a>
+                    <a class="footer-link" href="">Tips and Tutorials</a>
+                    <a class="footer-link" href="">Market Update</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
