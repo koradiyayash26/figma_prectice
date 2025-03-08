@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="gu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>શ્રી ન્યાલકરણ સદવિદ્યા મંદિર પ્રાથમિક શાળા- માંડવધાર</title>
+    <style>
+      @font-face {
+        font-family: "Gujarati";
+        src: url("path-to-gujarati-font.ttf") format("truetype");
+      }
+      body {
+        font-family: "Gujarati", Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+      .report-card {
+        width: fit-content;
+        border: 2px solid #0066cc;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+        padding: 4px;
+        position: relative;
+      }
+      .report-card-sub {
+        border: 1px solid #0066cc;
+        padding: 15px;
+      }
+
+      .student-info {
+        margin: 10px 0;
+        border-bottom: 1px solid #0066cc;
+        padding-bottom: 5px;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+      }
+      table {
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      th,
+      td {
+        border: 2px solid #0066cc;
+        padding: 3px;
+        text-align: center;
+        color: #0066cc;
+        font-size: 11px;
+      }
+      th {
+        font-weight: normal;
+      }
+      .section-header {
+        font-weight: bold;
+      }
+      .total-row {
+        font-weight: bold;
+      }
+      .remarks {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+      }
+      .signature {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+      }
+      .attendance {
+        margin-top: 10px;
+        font-size: 12px;
+        text-align: right;
+      }
+      .remark-column {
+        width: 80px;
+      }
+      .subject-column {
+        text-align: left;
+        padding-left: 5px;
+      }
+      .grade-column {
+        width: 30px;
+      }
+      .marks-column {
+        width: 40px;
+      }
+      .split-border {
+        border-left: solid black 2px;
+      }
+      .blank-row-space-cell {
+        padding: 10px;
+      }
+      .font-bold {
+        font-weight: bold;
+      }
+      th {
+        font-weight: bold;
+      }
+      .border-bottom {
+        border-bottom: solid white 1px;
+      }
+      @media print {
+        .school-name {
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="report-card">
+      <div class="report-card-sub">
+        <div style="display: flex; justify-content: center">
+          <div
+            class="school-name"
+            style="
+              width: 400px;
+              background-color: #0066cc;
+              color: white;
+              padding: 8px;
+              text-align: center;
+              font-weight: bold;
+              font-size: 16px;
+              border-radius: 6px;
+              margin-bottom: 10px;
+            "
+          >
+            શ્રી ન્યાલકરણ સદવિદ્યા મંદિર પ્રાથમિક શાળા- માંડવધાર
+          </div>
+        </div>
+        <div class="student-info">
+          <span class="font-bold" style="color: #0066cc"
+            >વિદ્યાર્થીનું નામ:
+            <span style="font-weight: normal">પ્રેક્ષા હરકિશનભાઈ</span></span
+          >
+          <span class="font-bold" style="color: #0066cc"
+            >ધોરણ: <span style="font-weight: normal">૨ (બી)</span></span
+          >
+        </div>
+        <table>
+          <tr>
+            <th rowspan="3" style="width: 20px">ક્રમ</th>
+            <th colspan="4" style="font-size: 16px">પ્રથમ સત્ર</th>
+            <th colspan="6" style="font-size: 16px" class="split-border">
+              બીજુ સત્ર
+            </th>
+            <th rowspan="3" class="remark-column" style="width: 150px">
+              રીમાર્ક
+            </th>
+          </tr>
+          <tr>
+            <th
+              rowspan="3"
+              style="text-align: center; font-size: 16px"
+              class="subject-column"
+            >
+              વિષય
+            </th>
+            <th colspan="" rowspan="2">મૂલ્યાંકન કસોટી</th>
+            <th colspan="">અનૌપચારિક સતત મૂલ્યાંકન</th>
+            <th rowspan="2">કુલ</th>
+            <th rowspan="2" class="split-border">મૂલ્યાંકન કસોટી</th>
+            <th colspan="">અનૌપચારિક સતત મૂલ્યાંકન</th>
+            <th rowspan="2">કુલ</th>
+            <th rowspan="3">
+              કુલ <br />
+              ૨૦૦ <br />
+              ગુણ <br />
+              માંથી
+            </th>
+            <th rowspan="3">
+              રૂપાંતર <br />
+              ૧૦૦<br />
+              ગુણ <br />
+              માંથી
+            </th>
+            <th rowspan="3" class="grade-column">ગ્રેડ</th>
+          </tr>
+          <tr>
+            <th class="marks-column">ઔપચારિક સમયાંતરે મૂલ્યાંકન</th>
+            <th class="marks-column">ઔપચારિક સમયાંતરે મૂલ્યાંકન</th>
+          </tr>
+          <tr class="section-header">
+            <td colspan="2" style="text-align: left; font-size: 14px">A</td>
+            <th class="marks-column" style="font-weight: 900">૨૦ માંથી</th>
+            <th class="marks-column" style="font-weight: 900">૮૦ માંથી</th>
+            <th class="marks-column" style="font-weight: 900">૧૦૦ માંથી</th>
+            <th class="marks-column split-border" style="font-weight: 900">
+              ૨૦ માંથી
+            </th>
+            <th class="marks-column" style="font-weight: 900">૮૦ માંથી</th>
+            <th class="marks-column" style="font-weight: 900">૧૦૦ માંથી</th>
+            <td rowspan="19" style="vertical-align: top">
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: auto;
+                  grid-template-rows: 5;
+                  gap: 30px;
+                  margin-top: 10px;
+                  text-align: left;
+                "
+              >
+                <div>સત્રાંત નં. -</div>
+                <div>વાલીની સહી. -</div>
+                <div>વાર્ષિક નં. -</div>
+                <div>વાલીની સહી. -</div>
+              </div>
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: auto;
+                  grid-template-rows: 5;
+                  gap: 30px;
+                  margin-top: 80px;
+                  text-align: left;
+                "
+              >
+                <div>
+                  <div
+                    style="
+                      border: solid #0066cc 1px;
+                      padding: 4px;
+                      font-size: 12px;
+                      text-align: center;
+                    "
+                  >
+                    <span style="border-bottom: solid #0066cc 1px"
+                      >એકંદરે અભ્યાસ</span
+                    >
+                    <div style="margin-top: 5px; white-space: nowrap">
+                      સારો - મધ્યમ - નબળો
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="
+                    border: solid #0066cc 1px;
+                    padding: 4px;
+                    text-align: center;
+                  "
+                  class="font-bold"
+                >
+                  પાસ / નાપાસ
+                </div>
+                <div
+                  style="
+                    border: solid #0066cc 1px;
+                    padding: 4px;
+                    text-align: center;
+                  "
+                >
+                  &nbsp;% ટકા
+                </div>
+                <div style="margin-top: 50px">હાજર દિવસો - &nbsp;</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>૧</td>
+            <td class="subject-column">ગુજરાતી</td>
+            <td>૧૯</td>
+            <td>૫૫</td>
+            <td>૭૪</td>
+            <td class="split-border">૧૯</td>
+            <td>૫૪</td>
+            <td>૭૩</td>
+            <td>૧૫૭</td>
+            <td>૭૪</td>
+            <td>A2</td>
+          </tr>
+          <tr>
+            <td>૨</td>
+            <td class="subject-column">હિન્દી</td>
+            <td>૧૯</td>
+            <td>૭૨</td>
+            <td>૯૧</td>
+            <td class="split-border">૧૯</td>
+            <td>૬૨</td>
+            <td>૮૧</td>
+            <td>૧૭૨</td>
+            <td>૮૬</td>
+            <td>A2</td>
+          </tr>
+          <tr>
+            <td>૩</td>
+            <td class="subject-column">ગણિત</td>
+            <td>૧૯</td>
+            <td>૬૪</td>
+            <td>૮૨</td>
+            <td class="split-border">૧૯</td>
+            <td>૭૨</td>
+            <td>૯૧</td>
+            <td>૧૭૩</td>
+            <td>૮૭</td>
+            <td>A2</td>
+          </tr>
+          <tr>
+            <td>૪</td>
+            <td class="subject-column">વિજ્ઞાન / પર્યા</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="split-border">-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>૫</td>
+            <td class="subject-column">સામાજિકવિજ્ઞાન</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="split-border">-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>૬</td>
+            <td class="subject-column">અંગ્રેજી</td>
+            <td>૧૯</td>
+            <td>૬૦</td>
+            <td>૭૯</td>
+            <td class="split-border">૧૯</td>
+            <td>૬૪</td>
+            <td>૮૩</td>
+            <td>૧૬૨</td>
+            <td>૮૧</td>
+            <td>A2</td>
+          </tr>
+          <tr>
+            <td>૭</td>
+            <td class="subject-column">સંસ્કૃત</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="split-border">-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td class="blank-row-space-cell"></td>
+            <td class="blank-row-space-cell"></td>
+            <td class="blank-row-space-cell"></td>
+            <td class="blank-row-space-cell"></td>
+            <td class="blank-row-space-cell"></td>
+            <td class="blank-row-space-cell split-border"></td>
+            <td class="blank-row-space-cell"></td>
+            <td class="blank-row-space-cell"></td>
+            <td class="blank-row-space-cell"></td>
+            <td class="blank-row-space-cell"></td>
+            <td class="blank-row-space-cell"></td>
+          </tr>
+          <tr class="total-row">
+            <td colspan="2">કુલ મેળવેલ ગુણ</td>
+            <td>૭૭</td>
+            <td>૨૫૨</td>
+            <td>૩૩૪</td>
+            <td class="split-border">૭૫</td>
+            <td>૨૫૨</td>
+            <td>૩૩૯</td>
+            <td>૬૭૩</td>
+            <td>૩૩૯</td>
+            <td></td>
+          </tr>
+          <tr class="section-header">
+            <td colspan="11" style="text-align: left; font-size: 14px">B</td>
+          </tr>
+          <tr>
+            <td>૮</td>
+            <td class="subject-column">કમ્પ્યુટર/સ.ઉ.ઉ.કા</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="split-border">૨૦</td>
+            <td>૭૪</td>
+            <td>૯૪</td>
+            <td>-</td>
+            <td>-</td>
+            <td>A1</td>
+          </tr>
+          <tr>
+            <td>૯</td>
+            <td class="subject-column">ચિત્ર</td>
+            <td>૧૯</td>
+            <td>૭૦</td>
+            <td>૮૯</td>
+            <td class="split-border">૧૯</td>
+            <td>૬૯</td>
+            <td>૮૭</td>
+            <td>૧૭૬</td>
+            <td>૮૮</td>
+            <td>A1</td>
+          </tr>
+          <tr>
+            <td>૧૦</td>
+            <td class="subject-column">સામાન્ય જ્ઞાન</td>
+            <td>૧૯</td>
+            <td>૭૦</td>
+            <td>૮૯</td>
+            <td class="split-border">૧૯</td>
+            <td>૭૦</td>
+            <td>૮૯</td>
+            <td>૧૭૮</td>
+            <td>૮૯</td>
+            <td>A1</td>
+          </tr>
+          <tr>
+            <td class="blank-row-space-cell"></td>
+            <td class="blank-row-space-cell"></td>
+            <td class="blank-row-space-cell"></td>
+            <td class="blank-row-space-cell"></td>
+            <td class="blank-row-space-cell"></td>
+            <td class="blank-row-space-cell split-border"></td>
+            <td class="blank-row-space-cell"></td>
+            <td class="blank-row-space-cell"></td>
+            <td class="blank-row-space-cell"></td>
+            <td class="blank-row-space-cell"></td>
+            <td class="blank-row-space-cell"></td>
+          </tr>
+          <tr class="total-row">
+            <td colspan="2">કુલ મેળવેલ ગુણ</td>
+            <td>૩૯</td>
+            <td>૧૪૦</td>
+            <td>૧૭૯</td>
+            <td class="split-border">૫૯</td>
+            <td>૨૨૨</td>
+            <td>૨૭૦</td>
+            <td>૩૫૪</td>
+            <td>૨૩૭</td>
+            <td></td>
+          </tr>
+          <tr class="total-row">
+            <td colspan="2">મુખ્ય ગુણ A+Bનો સરવાળો</td>
+            <td>૧૧૬</td>
+            <td>૪૦૨</td>
+            <td>૫૧૩</td>
+            <td class="split-border">૧૩૪</td>
+            <td>૪૭૪</td>
+            <td>૬૦૯</td>
+            <td>૧૨૨૭</td>
+            <td>૫૨૫</td>
+            <td></td>
+          </tr>
+          <tr class="total-row">
+            <td colspan="2">પાસ / નાપાસ</td>
+            <td colspan="3"></td>
+            <td colspan="6" class="split-border"></td>
+          </tr>
+          <tr style="height: 100px">
+            <td
+              colspan="3"
+              style="
+                text-align: left;
+                border-right: solid white 1px;
+                vertical-align: bottom;
+              "
+            >
+              વર્ગ શિક્ષક
+            </td>
+            <td colspan="2" style="text-align: left; vertical-align: bottom">
+              આચાર્ય
+            </td>
+            <td
+              colspan="4"
+              class="split-border"
+              style="text-align: left; vertical-align: bottom"
+            >
+              વર્ગ શિક્ષક
+            </td>
+            <td colspan="2" style="vertical-align: bottom">આચાર્ય</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

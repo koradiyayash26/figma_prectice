@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Binance Top 10 Tickers</title>
+    <style>
+        .ticker-container {
+            max-width: 1400px;
+            margin: 20px auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .ticker-row {
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+        }
+        .header {
+            font-weight: bold;
+            background-color: #f5f5f5;
+        }
+        .price-up {
+            color: #00c853;
+        }
+        .price-down {
+            color: #ff3d00;
+        }
+        .timestamp {
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="ticker-container">
+        <div class="ticker-row header">
+            <div>Symbol</div>
+            <div>Price</div>
+            <div>24h High</div>
+            <div>24h Low</div>
+            <div>24h Change</div>
+            <div>24h Change%</div>
+            <div>Volume</div>
+            <div>Quote Volume</div>
+            <div>Last Trade</div>
+        </div>
+        <div id="tickerList"></div>
+    </div>
+
+    <script>
+        class BinanceTickerStream {
+            constructor() {
+                this.ws = null;
+                this.tickers = new Map();
+                this.tickerList = document.getElementById('tickerList');
+                this.connect();
+            }
+
+            connect() {
+                this.ws = new WebSocket('wss://stream.binance.com:9443/ws/!ticker@arr');
+                
+                this.ws.onopen = () => {
+                    console.log('Connected to Binance WebSocket');
+                };
+
+                this.ws.onmessage = (event) => {
+                    const data = JSON.parse(event.data);
+                    this.updateTickers(data);                    
+                };
+
+                this.ws.onclose = () => {
+                    console.log('WebSocket Connection Closed');
+                    setTimeout(() => this.connect(), 5000);
+                };
+
+                this.ws.onerror = (error) => {
+                    console.error('WebSocket Error:', error);
+                };
+            }
+
+            updateTickers(tickerData) {
+                const top10 = tickerData
+                    .filter(ticker => ticker.s.endsWith('USDT'))
+                    .sort((a, b) => parseFloat(b.v) - parseFloat(a.v))
+                    .slice(0, 10);
+
+                let html = '';
+                top10.forEach(ticker => {
+                    const priceChange = parseFloat(ticker.p);
+                    const priceChangePercent = parseFloat(ticker.P);
+                    const priceClass = priceChangePercent >= 0 ? 'price-up' : 'price-down';
+                    
+                    const timestamp = new Date(ticker.E).toLocaleTimeString();
+                    
+                    html += `
+                        <div class="ticker-row">
+                            <div>${ticker.s}</div>
+                            <div>${parseFloat(ticker.c).toFixed(4)}</div>
+                            <div>${parseFloat(ticker.h).toFixed(4)}</div>
+                            <div>${parseFloat(ticker.l).toFixed(4)}</div>
+                            <div class="${priceClass}">${priceChange.toFixed(4)}</div>
+                            <div class="${priceClass}">${priceChangePercent.toFixed(2)}%</div>
+                            <div>${parseFloat(ticker.v).toLocaleString()}</div>
+                            <div>${parseFloat(ticker.q).toLocaleString()}</div>
+                            <div class="timestamp">${timestamp}</div>
+                        </div>
+                    `;
+                });
+
+                this.tickerList.innerHTML = html;
+            }
+        }
+
+        // Initialize the ticker stream
+        const binanceTicker = new BinanceTickerStream();
+    </script>
+</body>
+</html>
