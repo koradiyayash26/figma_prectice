@@ -34,5 +34,5 @@ def excel_to_pdf(excel_path):
 # Example usage
 if __name__ == "__main__":
     # Replace this with your Excel file path
-    excel_file = r"C:\Users\yashk\Downloads\Standard_9_Sem3_Cards_20250308.xlsx"
+    excel_file = r"C:\Users\yashk\Downloads\Standard_9_Sem3_Cards_20250313.xlsx"
     excel_to_pdf(excel_file)
